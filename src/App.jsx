@@ -1,22 +1,18 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import Header from "./components/Header/Header.jsx";
+import Hero from "./components/Hero/Hero.jsx";
+import Features from "./components/Features/Features.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
-  )
+export default function App() {
+    return (
+        <div className="app">
+            <Header />
+            <Hero />
+            <Features />
+            <Footer />
+            
+        </div>
+    )
 }
-
-export default App
